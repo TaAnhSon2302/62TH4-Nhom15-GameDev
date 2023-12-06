@@ -8,18 +8,22 @@ public class Player : MonoBehaviour
     public float moveForce = 8f;
     [SerializeField]
     public float jumpForce = 8f;
+    [SerializeField]
+    public float sliceForce = 10f;
 
     private float movementX;
     [SerializeField]
     private Rigidbody2D myBody;
 
+    public BoxCollider2D Collider;
     private SpriteRenderer sr;
     private Animator anim;
 
     private bool isGrounded;
     private string Run_Animation = "Run";
     private string Jump_Animation = "Jump";
-    private string Duck_Animation = "Duck";
+    private string Crouch_Animation = "Crouch";
+    private string Slice_Animation = "Slice";
     private string GROUND_TAG = "Ground";
     // Start is called before the first frame update
     void Start()
@@ -27,14 +31,18 @@ public class Player : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        Collider = GetComponent<BoxCollider2D>();
+ 
     }
 
     // Update is called once per frame
     void Update()
     {
+
         PlayerMoveKeyBoard();
         AnimatePlayer();
         playerJump();
+        playerSlice();
     }
      void FixedUpdate()
     {
@@ -68,6 +76,18 @@ public class Player : MonoBehaviour
             isGrounded = false;
             myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             anim.SetBool(Jump_Animation, true);
+        }
+    }
+    void playerSlice()
+    {
+        if (Input.GetKey("x"))
+        {
+            anim.SetBool(Slice_Animation, true);
+            transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * sliceForce;
+        }
+        else
+        {
+            anim.SetBool(Slice_Animation, false);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

@@ -123,64 +123,64 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duck0
+      name: duck0
       rect:
         serializedVersion: 2
         x: 19
         y: 0
-        width: 114
-        height: 146
+        width: 115
+        height: 147
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 402a9cd500180284b869c4a1ebfbcc03
-      internalID: -1735333795
+      spriteID: aed9599e965f64c4a8785ad5ce474d34
+      internalID: -524770003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck1
+      name: duck1
       rect:
         serializedVersion: 2
-        x: 162
+        x: 161
         y: 0
-        width: 123
-        height: 128
+        width: 124
+        height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ade280564e2a524eaa2a45209e8b891
-      internalID: -772810405
+      spriteID: ed9fcebacf250f448abb8a1115cb46b8
+      internalID: 1721439811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2
+      name: duckshot
       rect:
         serializedVersion: 2
         x: 332
         y: 0
         width: 119
-        height: 132
+        height: 133
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57d94c70c856cba45a5bbab131b30473
-      internalID: 1472445407
+      spriteID: 8cceb6ff03c1c5646a73d00883708b2b
+      internalID: 944428606
       vertices: []
       indices: 
       edges: []
@@ -196,9 +196,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Duck0: -1735333795
-      Duck1: -772810405
-      Duck2: 1472445407
+      duck0: -524770003
+      duck1: 1721439811
+      duckshot: 944428606
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
