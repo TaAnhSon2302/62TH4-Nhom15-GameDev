@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 91ea465f0b9f8fd478ba5ca027daef69
+guid: 6d51222f3afcf4741a58ef9999db6d89
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,286 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bridge1
+      name: skeleton-walk_0
       rect:
         serializedVersion: 2
-        x: 33
-        y: 204
-        width: 8
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ac6960f3b1847704e9afec0e289a2ae3
-      internalID: -2110881059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BridgeBody1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 195
-        width: 38
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5e775e0e771dd744ae4a93bfbd32c30
-      internalID: -1641570189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BridgeBody2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 195
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57bbf8177ab4b7b49812ddddf2617b67
-      internalID: 1825378244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BridgeBody3
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 195
-        width: 38
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b801a29529a2376488023aa8ac691481
-      internalID: -18336009
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bridge2
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 204
-        width: 8
-        height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29d1277670f0cc44486a2fba775e5161
-      internalID: -2096909737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Platform
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 64
-        width: 151
-        height: 144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c84b2ebdd3b52064b9a979b5222a5483
-      internalID: 1597651740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ground1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 144
-        width: 64
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e19c642c109ede4a9f03135e0c4dad7
-      internalID: 522127087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lava
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 16
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2ef5f0cd174ab96499fcf9e607e3de0b
-      internalID: -1983327376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JumpPlatform
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 80
-        width: 47
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bba71b3e36ef5c41b096a79244faa02
-      internalID: -1086419751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ground2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71f0b132303c9454d938748d2f7bc490
-      internalID: 849227488
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ground3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e7b2971f3092cca4c811968bf0bfa0b2
-      internalID: -405106919
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Upside
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 32
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 068b635e762c2614d9e253347b2c666f
-      internalID: 1394731705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Downside
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 16
-        width: 32
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0e896d841359d04bae4163c363afbd2
-      internalID: -665953966
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Ground5
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 113
-        width: 16
-        height: 16
+        x: 57
+        y: 0
+        width: 84
+        height: 151
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0779753c564bbc46b6f125328837d2d
-      internalID: -411848349
+      spriteID: b47348d4972d6104d9c2a0c7cfe1d37c
+      internalID: -2083063621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ground4
+      name: skeleton-walk_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 112
-        width: 14
-        height: 16
+        x: 231
+        y: 0
+        width: 84
+        height: 162
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,8 +158,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 023792daeb4369f4b800466e8db02235
-      internalID: -1160344079
+      spriteID: 0e1c489b23183e04487812ba8f8e796c
+      internalID: -1838879698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-walk_2
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 0
+        width: 89
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5870c4c6451aa274c961652c30fb8ec3
+      internalID: -564878038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-walk_3
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 0
+        width: 84
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3552cd7f3477fe445905f16aca6f318a
+      internalID: -1118049519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-walk_4
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 0
+        width: 95
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bdf7d59fcdc07946ab38a1c99ecfb3b
+      internalID: -1713745694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-walk_5
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 0
+        width: 95
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db849e2992833e64283e333781cd42b3
+      internalID: -1972260014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-walk_6
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 0
+        width: 107
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40dbee0ebd6464848a4f56d719a7fb14
+      internalID: 384254622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton-walk_7
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 0
+        width: 95
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572611677273f3a48811d947986a4aa0
+      internalID: -277339817
       vertices: []
       indices: 
       edges: []
@@ -448,21 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bridge1: -2110881059
-      Bridge2: -2096909737
-      BridgeBody1: -1641570189
-      BridgeBody2: 1825378244
-      BridgeBody3: -18336009
-      Downside: -665953966
-      Ground1: 522127087
-      Ground2: 849227488
-      Ground3: -405106919
-      Ground4: -1160344079
-      Ground5: -411848349
-      JumpPlatform: -1086419751
-      Lava: -1983327376
-      Platform: 1597651740
-      Upside: 1394731705
+      skeleton-walk_0: -2083063621
+      skeleton-walk_1: -1838879698
+      skeleton-walk_2: -564878038
+      skeleton-walk_3: -1118049519
+      skeleton-walk_4: -1713745694
+      skeleton-walk_5: -1972260014
+      skeleton-walk_6: 384254622
+      skeleton-walk_7: -277339817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

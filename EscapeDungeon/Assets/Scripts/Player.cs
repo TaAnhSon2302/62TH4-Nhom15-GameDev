@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     private bool isGrounded;
     private string Run_Animation = "Run";
     private string Jump_Animation = "Jump";
-    private string Crouch_Animation = "Crouch";
     private string Slice_Animation = "Slice";
     private string GROUND_TAG = "Ground";
     // Start is called before the first frame update
@@ -84,9 +83,13 @@ public class Player : MonoBehaviour
         {
             anim.SetBool(Slice_Animation, true);
             transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * sliceForce;
+            Collider.size =new Vector2(1.23f, 0.9267089f);
+            Collider.offset = new Vector2(0f, -0.2567396f);
         }
         else
         {
+            Collider.size = new Vector2(1.23f, 1.354608f);
+            Collider.offset = new Vector2(0f, -0.04279f);
             anim.SetBool(Slice_Animation, false);
         }
     }
