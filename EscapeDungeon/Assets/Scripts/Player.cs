@@ -7,11 +7,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     public float moveForce = 8f;
     [SerializeField]
-    public float jumpForce = 8f;
-    [SerializeField]
-    public float sliceForce = 10f;
+    public float jumpForce = 10f;
 
-    private float movementX;
+    bool facingRight;
     [SerializeField]
     private Rigidbody2D myBody;
 
@@ -20,9 +18,7 @@ public class Player : MonoBehaviour
     private Animator anim;
 
     private bool isGrounded;
-    private string Run_Animation = "Run";
     private string Jump_Animation = "Jump";
-    private string Slice_Animation = "Slice";
     private string GROUND_TAG = "Ground";
     // Start is called before the first frame update
     void Start()
@@ -31,67 +27,45 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         Collider = GetComponent<BoxCollider2D>();
- 
+        facingRight = true;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        PlayerMoveKeyBoard();
-        AnimatePlayer();
-        playerJump();
-        playerSlice();
+
     }
-     void FixedUpdate()
+    void FixedUpdate()
     {
-        
-    }
-    void PlayerMoveKeyBoard()
-    {
-        movementX = Input.GetAxisRaw("Horizontal");
-        transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForce;
-    }
-    void AnimatePlayer()
-    {
-        if(movementX > 0)
+        float move = Input.GetAxis("Horizontal");
+
+        anim.SetFloat("speed", Mathf.Abs(move));
+        myBody.velocity = new Vector2(move * moveForce, myBody.velocity.y);
+        if (move > 0 && !facingRight)
         {
-            anim.SetBool(Run_Animation, true);
-            sr.flipX = false;
-        }else if (movementX < 0)
-        {
-            anim.SetBool(Run_Animation, true);
-            sr.flipX = true;
+            flip();
         }
-        else
+        else if (move < 0 && facingRight)
         {
-            anim.SetBool(Run_Animation, false);
+            flip();
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            if (isGrounded)
+            {
+                isGrounded = false;
+                myBody.velocity = new Vector2(myBody.velocity.x, jumpForce);
+                anim.SetBool(Jump_Animation,true);
+            }
         }
     }
-    void playerJump()
+    void flip()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            isGrounded = false;
-            myBody.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-            anim.SetBool(Jump_Animation, true);
-        }
-    }
-    void playerSlice()
-    {
-        if (Input.GetKey("x"))
-        {
-            anim.SetBool(Slice_Animation, true);
-            transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * sliceForce;
-            Collider.size =new Vector2(1.23f, 0.9267089f);
-            Collider.offset = new Vector2(0f, -0.2567396f);
-        }
-        else
-        {
-            Collider.size = new Vector2(1.23f, 1.354608f);
-            Collider.offset = new Vector2(0f, -0.04279f);
-            anim.SetBool(Slice_Animation, false);
-        }
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
