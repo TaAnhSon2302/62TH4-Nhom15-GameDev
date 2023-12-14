@@ -4,20 +4,30 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //Moving
     [SerializeField]
     public float moveForce = 8f;
     [SerializeField]
     public float jumpForce = 10f;
-
     bool facingRight;
+
+    //Grounded checking when jump and land
+    private bool isGrounded;
+
+    //Shooting
+    public Transform Gun;
+    public GameObject Bullet;
+    private bool isRunning = false;
+    float fireRate = 0.5f;
+    float nextFire = 0;
+
     [SerializeField]
     private Rigidbody2D myBody;
 
     public BoxCollider2D Collider;
-    private SpriteRenderer sr;
     private Animator anim;
 
-    private bool isGrounded;
+    //Animation name
     private string Jump_Animation = "Jump";
     private string GROUND_TAG = "Ground";
     // Start is called before the first frame update
@@ -25,7 +35,6 @@ public class Player : MonoBehaviour
     {
         myBody = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
         Collider = GetComponent<BoxCollider2D>();
         facingRight = true;
     }
@@ -45,10 +54,17 @@ public class Player : MonoBehaviour
         if (move > 0 && !facingRight)
         {
             flip();
+            isRunning = true;
+
         }
         else if (move < 0 && facingRight)
         {
+            isRunning = true;
             flip();
+        }
+        else if (move == 0)
+        {
+            isRunning = false;
         }
         if (Input.GetKey(KeyCode.Space))
         {
@@ -58,6 +74,11 @@ public class Player : MonoBehaviour
                 myBody.velocity = new Vector2(myBody.velocity.x, jumpForce);
                 anim.SetBool(Jump_Animation,true);
             }
+        }
+        //Shooting
+        if (Input.GetKey(KeyCode.X))
+        {
+            fireBullet();
         }
     }
     void flip()
@@ -73,6 +94,39 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool(Jump_Animation, false);
+        }
+    }
+    //Shooting function
+    void fireBullet()
+    {
+        if(Time.time > nextFire){
+            nextFire = Time.time + fireRate;
+            if (facingRight)
+            {
+                if (isRunning)
+                {
+                    anim.SetTrigger("RunShoot");
+                    Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+                }
+                else
+                {
+                    anim.SetTrigger("Shoot");
+                    Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+                }
+               
+            }
+            else if (!facingRight){
+                if(isRunning)
+                {
+                    anim.SetTrigger("RunShoot");
+                    Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+                }
+                else
+                {
+                    anim.SetTrigger("Shoot");
+                    Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 180)));
+                }
+            }
         }
     }
 }
