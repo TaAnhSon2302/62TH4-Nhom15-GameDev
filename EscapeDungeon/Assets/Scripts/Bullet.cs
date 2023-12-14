@@ -10,7 +10,14 @@ public class Bullet : MonoBehaviour
     void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
-        myBody.AddForce(new Vector2(1, 0) * bulletSpeed, ForceMode2D.Impulse);
+        if (transform.localRotation.z > 0)
+        {
+            myBody.AddForce(new Vector2(-1, 0) * bulletSpeed, ForceMode2D.Impulse);
+        }
+        else
+        {
+            myBody.AddForce(new Vector2(1, 0) * bulletSpeed, ForceMode2D.Impulse);
+        }
     }
     void Start()
     {
@@ -21,5 +28,9 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         
+    }
+    public void removeForce()
+    {
+        myBody.velocity = new Vector2(0, 0);
     }
 }
