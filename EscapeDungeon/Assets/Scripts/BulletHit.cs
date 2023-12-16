@@ -31,13 +31,5 @@ public class BulletHit : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            myBullet.removeForce();
-            Instantiate(Explosion, transform.position, transform.rotation);
-            Destroy(gameObject);
-        }
-    }
+    
 }
