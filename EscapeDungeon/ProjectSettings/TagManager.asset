@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Enemy
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Player
     uniqueID: 775801343
+    locked: 0
+  - name: Ladder
+    uniqueID: 3958260759
     locked: 0
   - name: Back
     uniqueID: 2921779611

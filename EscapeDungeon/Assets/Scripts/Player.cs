@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     public float moveForce = 8f;
     [SerializeField]
-    public float jumpForce = 10f;
+    public float jumpForce = 6f;
     bool facingRight;
 
     //Grounded checking when jump and land
