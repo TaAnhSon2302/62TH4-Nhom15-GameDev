@@ -37,7 +37,6 @@ public class ClimbingLadder : MonoBehaviour
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
             anim.SetBool(Climb_Animation, true);
-
         }
         else
         {

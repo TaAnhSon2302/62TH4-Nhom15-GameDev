@@ -7,6 +7,7 @@ public class BulletHit : MonoBehaviour
     Bullet myBullet;
     public float stayTime;
     public GameObject Explosion;
+    public float bulletDamage;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class BulletHit : MonoBehaviour
             myBullet.removeForce();
             Instantiate(Explosion, transform.position, transform.rotation);
             Destroy(gameObject);
+            EnemyHealth hurtEnemy = collision.gameObject.GetComponent<EnemyHealth>();
+            hurtEnemy.addDamage(bulletDamage);
         }
     }
     

@@ -210,6 +210,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stayTime: 3
   Explosion: {fileID: 2174219908454244715, guid: f673c2914942cf440909a15938d9316d, type: 3}
+  bulletDamage: 10
 --- !u!58 &1756765987181583812
 CircleCollider2D:
   m_ObjectHideFlags: 0
