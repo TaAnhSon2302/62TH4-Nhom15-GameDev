@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     public float jumpForce = 6f;
     bool facingRight;
 
+    public AudioSource walking;
+    public AudioSource shooting;
     //Grounded checking when jump and land
     private bool isGrounded;
 
@@ -55,16 +57,21 @@ public class Player : MonoBehaviour
         {
             flip();
             isRunning = true;
+            if(isGrounded)
+               walking.Play();
 
         }
         else if (move < 0 && facingRight)
         {
             isRunning = true;
             flip();
+            if (isGrounded)
+                walking.Play();
         }
         else if (move == 0)
         {
             isRunning = false;
+            walking.Pause();
         }
         if (Input.GetKey(KeyCode.Space))
         {
@@ -73,6 +80,7 @@ public class Player : MonoBehaviour
                 isGrounded = false;
                 myBody.velocity = new Vector2(myBody.velocity.x, jumpForce);
                 anim.SetBool(Jump_Animation,true);
+                walking.Pause();
             }
         }
         //Shooting
@@ -105,11 +113,13 @@ public class Player : MonoBehaviour
             {
                 if (isRunning)
                 {
+                    shooting.Play();
                     anim.SetTrigger("RunShoot");
                     Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 0)));
                 }
                 else
                 {
+                    shooting.Play();
                     anim.SetTrigger("Shoot");
                     Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 0)));
                 }
@@ -118,11 +128,13 @@ public class Player : MonoBehaviour
             else if (!facingRight){
                 if(isRunning)
                 {
+                    shooting.Play();
                     anim.SetTrigger("RunShoot");
                     Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 180)));
                 }
                 else
                 {
+                    shooting.Play();
                     anim.SetTrigger("Shoot");
                     Instantiate(Bullet, Gun.position, Quaternion.Euler(new Vector3(0, 0, 180)));
                 }

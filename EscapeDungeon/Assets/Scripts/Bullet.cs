@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
     public float bulletSpeed;
     Rigidbody2D myBody;
-
+    public AudioSource bullethit;
     void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
@@ -31,6 +31,7 @@ public class Bullet : MonoBehaviour
     }
     public void removeForce()
     {
+        bullethit.Play();
         myBody.velocity = new Vector2(0, 0);
     }
 }
