@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public bool isDead;
     public float maxHealth;
     float currentHealth;
 
@@ -35,15 +37,18 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Limit"))
+
+        if (collision.gameObject.CompareTag("Finish"))
         {
-            playerHealthSlider.value = 0;
-            makeDead();
+            SceneManager.LoadScene(4);
         }
+
     }
 
-    void makeDead()
+    public void makeDead()
     {
+        isDead = true;
+        playerHealthSlider.value = 0;
         UIManager.Instance.txtGameOver.SetActive(true);
         gameObject.SetActive(false);
     }
