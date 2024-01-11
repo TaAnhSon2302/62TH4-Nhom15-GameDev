@@ -32,8 +32,6 @@ public class Player : MonoBehaviour
     //Animation name
     private string Jump_Animation = "Jump";
     private string GROUND_TAG = "Ground";
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +44,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+
     }
     void FixedUpdate()
     {
@@ -99,17 +98,11 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(GROUND_TAG) )
+        if (collision.gameObject.CompareTag(GROUND_TAG))
         {
             isGrounded = true;
             anim.SetBool(Jump_Animation, false);
         }
-        if (collision.gameObject.CompareTag("MovingPlatform"))
-        {
-            isGrounded = true;
-            anim.SetBool(Jump_Animation, false);
-        }
-        
     }
     //Shooting function
     void fireBullet()
