@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public bool isDeath;
     public float maxHealth;
     float currentHealth;
 
@@ -43,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public void makeDead()
+    void makeDead()
     {
         UIManager.Instance.txtGameOver.SetActive(true);
         gameObject.SetActive(false);
