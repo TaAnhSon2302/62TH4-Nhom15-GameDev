@@ -32,19 +32,8 @@ public class PlayerHealth : MonoBehaviour
             makeDead();
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Limit"))
-        {
-            playerHealthSlider.value = 0;
-            makeDead();
-        }
-    }
-
     void makeDead()
     {
-        UIManager.Instance.txtGameOver.SetActive(true);
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }
