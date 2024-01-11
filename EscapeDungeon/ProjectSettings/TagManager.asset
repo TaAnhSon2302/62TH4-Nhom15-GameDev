@@ -8,18 +8,14 @@ TagManager:
   - Enemy
   - Ladder
   - Limit
-  - Lava
-  - MovingPlatform
-  - Spike
-  - Portal
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - Enemy
+  - 
   - 
   - 
   - 
