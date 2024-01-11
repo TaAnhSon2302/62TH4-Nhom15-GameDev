@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 690876593893611050}
   - component: {fileID: 4790972834316725243}
   - component: {fileID: 5729349293227610498}
+  - component: {fileID: 3972263839469247693}
+  - component: {fileID: 4424785832242986462}
   m_Layer: 0
   m_Name: Bat
   m_TagString: Enemy
@@ -215,3 +217,30 @@ MonoBehaviour:
   enemySpeed: 4
   LineOfSite: 3.5
   enemyGraphic: {fileID: 6319790765306386790}
+--- !u!114 &3972263839469247693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6319790765306386790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcd871df956334cbf9f7a72af67640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  pushBackForce: 2
+--- !u!114 &4424785832242986462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6319790765306386790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a37f89541e988e4fa8ffdd1c93f34a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 20
