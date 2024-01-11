@@ -28,18 +28,6 @@ public class EnemyDamage : MonoBehaviour
             pushBack(collision.transform);
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player" && nextDamage < Time.time)
-        {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-            playerHealth.addDamage(damage);
-            nextDamage = damageRate + Time.time;
-            pushBack(collision.transform);
-        }
-    }
-
     void pushBack(Transform pushedObject)
     {
         Vector2 pushDirection = new Vector2(0, (pushedObject.position.y -transform.position.y)).normalized;
