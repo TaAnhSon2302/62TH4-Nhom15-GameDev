@@ -12,6 +12,7 @@ TagManager:
   - MovingPlatform
   - Spike
   - Portal
+  - Bullet
   layers:
   - Default
   - TransparentFX

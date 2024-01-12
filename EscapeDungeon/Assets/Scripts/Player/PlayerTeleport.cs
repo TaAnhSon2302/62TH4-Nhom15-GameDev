@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentPortal;
+    public AudioSource transformsound;
     void Start()
     {
         
@@ -18,6 +19,7 @@ public class PlayerTeleport : MonoBehaviour
             if (currentPortal != null)
             {
                 transform.position = currentPortal.GetComponent<Portal>().GetDestination().position;
+                transformsound.Play();
             }
         }
     }

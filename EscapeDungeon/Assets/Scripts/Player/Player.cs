@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public AudioSource walking;
     public AudioSource shooting;
+    public AudioSource jumping;
     //Grounded checking when jump and land
     private bool isGrounded;
 
@@ -83,6 +84,7 @@ public class Player : MonoBehaviour
                 myBody.velocity = new Vector2(myBody.velocity.x, jumpForce);
                 anim.SetBool(Jump_Animation,true);
                 walking.Pause();
+                jumping.Play();
             }
         }
         //Shooting
@@ -104,6 +106,7 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool(Jump_Animation, false);
+            walking.Play();
         }
         if (collision.gameObject.CompareTag("MovingPlatform"))
         {

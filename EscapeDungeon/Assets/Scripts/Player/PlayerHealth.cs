@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth;
     float currentHealth;
 
+    public AudioSource playerhitted;
     public Slider playerHealthSlider;
     void Start()
     {
@@ -27,6 +28,7 @@ public class PlayerHealth : MonoBehaviour
         if (damage <= 0)
             return;
         currentHealth -= damage;
+        playerhitted.Play();
         playerHealthSlider.value = currentHealth;
         if(currentHealth <= 0)
         {
