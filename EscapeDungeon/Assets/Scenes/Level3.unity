@@ -1045,6 +1045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  gettinghited: {fileID: 0}
 --- !u!95 &268995940
 Animator:
   serializedVersion: 5
@@ -1506,6 +1507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  gettinghited: {fileID: 0}
 --- !u!95 &348262183
 Animator:
   serializedVersion: 5
@@ -2248,6 +2250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  gettinghited: {fileID: 0}
 --- !u!95 &584117128
 Animator:
   serializedVersion: 5
@@ -3392,14 +3395,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1591441280379335655, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 1591441280379335655, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -44
-      objectReference: {fileID: 0}
     - target: {fileID: 1631555949540866693, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -3408,94 +3403,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_text
-      value: GAME OVER
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontSize
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_margin.z
-      value: -62.551147
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8d15ab71442963c47b22b47460111e35, type: 2}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 70
-      objectReference: {fileID: 0}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 3604630249188092411, guid: 8d15ab71442963c47b22b47460111e35, type: 2}
-    - target: {fileID: 3048691191354619514, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3384576665371128642, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 64131416}
-    - target: {fileID: 3384576665371128642, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_RenderMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3384576665371128642, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_SortingOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3384576665371128642, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3811454463110479219, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
       propertyPath: m_Name
       value: playerHUDCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_text
-      value: REPLAY GAME
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 8d15ab71442963c47b22b47460111e35, type: 2}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.09955848
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.09955848
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.89433956
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 3604630249188092411, guid: 8d15ab71442963c47b22b47460111e35, type: 2}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4279835108
-      objectReference: {fileID: 0}
-    - target: {fileID: 3860634295505877669, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5010085887342198063, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5010085887342198063, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 522127087, guid: 91ea465f0b9f8fd478ba5ca027daef69, type: 3}
     - target: {fileID: 5967825108378360160, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3575,30 +3490,6 @@ PrefabInstance:
     - target: {fileID: 5967825108378360160, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578648319083432431, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_Value
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6578648319083432431, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_MaxValue
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 8213735398204482252, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 238.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 8213735398204482252, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 61.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 8213735398204482252, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -38
-      objectReference: {fileID: 0}
-    - target: {fileID: 8213735398204482252, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -109
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3834,6 +3725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  gettinghited: {fileID: 0}
 --- !u!95 &1059796886
 Animator:
   serializedVersion: 5
@@ -8967,6 +8859,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6da3fad780952e46a51b8294a6b6ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transformsound: {fileID: 0}
 --- !u!82 &1322918237
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11757,6 +11650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  gettinghited: {fileID: 0}
 --- !u!114 &3972263839690925381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11814,6 +11708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  gettinghited: {fileID: 0}
 --- !u!50 &4790972834126434931
 Rigidbody2D:
   serializedVersion: 4
@@ -11875,6 +11770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  gettinghited: {fileID: 0}
 --- !u!61 &5525507920357593185
 BoxCollider2D:
   m_ObjectHideFlags: 0
