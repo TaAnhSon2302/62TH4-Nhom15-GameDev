@@ -542,6 +542,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5205552668645789451, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7495320241971928343, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: damage
       value: 30
@@ -1182,7 +1186,8 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7809481685388083444, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8581896247169186182, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
       insertIndex: -1
@@ -1269,6 +1274,10 @@ PrefabInstance:
     - target: {fileID: 4048857930270422060, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205552668645789451, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
+      propertyPath: damage
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7495320241971928343, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: damage
@@ -1426,7 +1435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6663314301027338141, guid: c29ac83e05a1b4845a774645e009d920, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -163.25172
+      value: -163.86
       objectReference: {fileID: 0}
     - target: {fileID: 6663314301027338141, guid: c29ac83e05a1b4845a774645e009d920, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1615,6 +1624,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5142216521799519334, guid: a6a23e2ee3189f848a63118e52b2fc4b, type: 3}
   m_PrefabInstance: {fileID: 855662814}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &426212941
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426212932}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.615
 --- !u!4 &432156979 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4852866753044754393, guid: 2a1522901238f2f4c9f962ab3712f5c0, type: 3}
@@ -2388,6 +2432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5205552668645789451, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7495320241971928343, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: damage
       value: 30
@@ -2940,6 +2988,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2140237823004941878, guid: a6a23e2ee3189f848a63118e52b2fc4b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 426212933}
+    - targetCorrespondingSourceObject: {fileID: 2140237823004941878, guid: a6a23e2ee3189f848a63118e52b2fc4b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 426212941}
   m_SourcePrefab: {fileID: 100100000, guid: a6a23e2ee3189f848a63118e52b2fc4b, type: 3}
 --- !u!4 &872577659 stripped
 Transform:
@@ -3413,6 +3464,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5205552668645789451, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7495320241971928343, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: damage
       value: 30
@@ -3638,6 +3693,10 @@ PrefabInstance:
     - target: {fileID: 4048857930270422060, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205552668645789451, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
+      propertyPath: damage
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7495320241971928343, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: damage
@@ -7553,6 +7612,10 @@ PrefabInstance:
     - target: {fileID: 4048857930270422060, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5205552668645789451, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
+      propertyPath: damage
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7495320241971928343, guid: b6c1a718f1da8b44d96d3fb9f225e604, type: 3}
       propertyPath: damage
