@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public bool isDeath;
     public float maxHealth;
     float currentHealth;
 
@@ -37,13 +38,14 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Limit"))
         {
-            playerHealthSlider.value = 0;
             makeDead();
         }
     }
 
-    void makeDead()
+    public void makeDead()
     {
+        isDeath = true;
+        playerHealthSlider.value = 0;
         UIManager.Instance.txtGameOver.SetActive(true);
         gameObject.SetActive(false);
     }

@@ -40,9 +40,10 @@ public class FlyingEnemies : MonoBehaviour
         theScale.x *= -1;
         enemyGraphic.transform.localScale = theScale;
     }
-    private void OnDrawGizmosSelected()
+
+    private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position,LineOfSite);
+        Gizmos.DrawWireSphere(transform.position, LineOfSite);
     }
 }
