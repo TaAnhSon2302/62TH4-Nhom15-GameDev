@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Finish: MonoBehaviour
+public class Finish : MonoBehaviour
 {
     private AudioSource finishSound;
     // Start is called before the first frame update
@@ -17,12 +17,9 @@ public class Finish: MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             finishSound.Play();
-            Invoke("CompleteLevel", 1f);
-            
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
         }
     }
-    private void CompleteLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
 }
+
