@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentPortal;
     public AudioSource transformsound;
+    public GameObject popup;
     void Start()
     {
         
@@ -25,14 +27,16 @@ public class PlayerTeleport : MonoBehaviour
     }
    
     private void OnTriggerEnter2D(Collider2D collision)
-    {
+    {   
         if (collision.gameObject.tag == "Portal")
         {
+            popup.SetActive(true);
             currentPortal = collision.gameObject;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        popup.SetActive(false);
         if (collision.gameObject.tag == "Portal")
         {
             if (collision.gameObject == currentPortal)

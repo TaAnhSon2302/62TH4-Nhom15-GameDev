@@ -10,7 +10,7 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
-    }    
+    }
     public void Home()
     {
         SceneManager.LoadScene("StartMenu");

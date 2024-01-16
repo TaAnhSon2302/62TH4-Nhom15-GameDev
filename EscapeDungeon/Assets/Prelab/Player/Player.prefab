@@ -132,6 +132,7 @@ MonoBehaviour:
   jumpForce: 6
   walking: {fileID: 4198597998862001057}
   shooting: {fileID: 1203903933567526874}
+  jumping: {fileID: 0}
   Gun: {fileID: 470485941260849133}
   Bullet: {fileID: 8951423287811698928, guid: c33ec8da609fed8439d577ab9e5ac556, type: 3}
   myBody: {fileID: 6301564653252202128}
@@ -163,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDeath: 0
-  maxHealth: 30
+  maxHealth: 60
   playerhitted: {fileID: 477908247251632352}
   playerHealthSlider: {fileID: 0}
 --- !u!50 &6301564653252202128
@@ -432,6 +433,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6da3fad780952e46a51b8294a6b6ab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transformsound: {fileID: 0}
+  popup: {fileID: 0}
 --- !u!82 &477908247251632352
 AudioSource:
   m_ObjectHideFlags: 0
