@@ -922,6 +922,7 @@ GameObject:
   - component: {fileID: 268995938}
   - component: {fileID: 268995937}
   - component: {fileID: 268995936}
+  - component: {fileID: 268995942}
   m_Layer: 0
   m_Name: SkeletonModel
   m_TagString: Enemy
@@ -1119,6 +1120,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &268995942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268995934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcd871df956334cbf9f7a72af67640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  pushBackForce: 2
 --- !u!1 &273682646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1399,7 @@ GameObject:
   - component: {fileID: 348262181}
   - component: {fileID: 348262180}
   - component: {fileID: 348262179}
+  - component: {fileID: 348262185}
   m_Layer: 0
   m_Name: SkeletonModel
   m_TagString: Enemy
@@ -1581,6 +1597,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &348262185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348262177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcd871df956334cbf9f7a72af67640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  pushBackForce: 2
 --- !u!114 &361669788 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6578648319083432431, guid: a1c0fed2cdc0511468bbfc33a3c1afba, type: 3}
@@ -2127,6 +2157,7 @@ GameObject:
   - component: {fileID: 584117126}
   - component: {fileID: 584117125}
   - component: {fileID: 584117124}
+  - component: {fileID: 584117130}
   m_Layer: 0
   m_Name: SkeletonModel
   m_TagString: Enemy
@@ -2324,6 +2355,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &584117130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584117122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcd871df956334cbf9f7a72af67640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  pushBackForce: 2
 --- !u!1001 &588714551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3602,6 +3647,7 @@ GameObject:
   - component: {fileID: 1059796884}
   - component: {fileID: 1059796883}
   - component: {fileID: 1059796882}
+  - component: {fileID: 1059796888}
   m_Layer: 0
   m_Name: SkeletonModel
   m_TagString: Enemy
@@ -3799,6 +3845,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1059796888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059796880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcd871df956334cbf9f7a72af67640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  pushBackForce: 2
 --- !u!1 &1060581042
 GameObject:
   m_ObjectHideFlags: 0
@@ -11959,6 +12019,7 @@ GameObject:
   - component: {fileID: 7769374509058986227}
   - component: {fileID: 7769374509058986228}
   - component: {fileID: 7769374509058986229}
+  - component: {fileID: 7769374509058986230}
   m_Layer: 0
   m_Name: SkeletonModel
   m_TagString: Enemy
@@ -12069,6 +12130,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.06, y: 1.57}
   m_EdgeRadius: 0
+--- !u!114 &7769374509058986230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7627347552877593464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9efcd871df956334cbf9f7a72af67640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0
+  pushBackForce: 0
 --- !u!212 &8239813759695926705
 SpriteRenderer:
   m_ObjectHideFlags: 0
