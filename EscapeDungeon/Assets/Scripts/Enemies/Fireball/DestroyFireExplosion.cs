@@ -5,8 +5,10 @@ using UnityEngine;
 public class DestroyFireExplosion : MonoBehaviour
 {
     public float aliveTime;
+    public AudioSource fireexplosion;
     void Start()
     {
+        fireexplosion.Play();
         Destroy(gameObject, aliveTime);
     }
 

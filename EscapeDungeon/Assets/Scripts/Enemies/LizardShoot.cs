@@ -8,9 +8,9 @@ public class LizardShoot : MonoBehaviour
 
     public Transform Mouth;
     public GameObject lizardBullet;
-    public float timer;
     private Animator anim;
     private GameObject player;
+    public AudioSource fireBreath;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -23,21 +23,15 @@ public class LizardShoot : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
         if(distance < 8)
         {
-            timer += Time.deltaTime;
-            if (timer > 2)
-            {
-                timer = 0;
-                shoot();
                 anim.SetBool("Shoot", true);
-            }
         }
         else
         {
             anim.SetBool("Shoot", false);
         }
-
     }void shoot()
     {
+        fireBreath.Play();
         Instantiate(lizardBullet, Mouth.position, Quaternion.identity);
     }
 }
