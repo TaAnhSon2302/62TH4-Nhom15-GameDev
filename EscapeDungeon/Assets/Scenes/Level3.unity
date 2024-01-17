@@ -2090,7 +2090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4ecd1959be689594a8d8daf09e9342d1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bc12fbb7b10dc34da9de5f0bac9921f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8920,7 +8920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformsound: {fileID: 0}
-  popup: {fileID: 0}
 --- !u!82 &1322918237
 AudioSource:
   m_ObjectHideFlags: 0
